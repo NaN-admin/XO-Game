@@ -1,78 +1,37 @@
-body {
-  background-color: #333;
+@font-face {
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?3we6qa");
+  src: url("fonts/icomoon.eot?3we6qa#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?3we6qa") format("truetype"),
+    url("fonts/icomoon.woff?3we6qa") format("woff"),
+    url("fonts/icomoon.svg?3we6qa#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
 }
-.game {
-  width: 255px;
-  text-align: center;
-  font-family: system-ui;
-  color: white;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 50px 0;
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-.title {
-  background-color: rgb(26, 255, 0);
-  padding: 5px 0;
-  margin: 5px 0;
-  font-size: 20px;
+
+.icon-instagram:before {
+  content: "\ea92";
 }
-span {
-  color: #333;
+.icon-youtube:before {
+  content: "\ea9d";
 }
-.square {
-  width: 80px;
-  height: 80px;
-  float: left;
-  margin: 2px;
-  background-color: rgb(26, 255, 0);
-  font-size: 50px;
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.square:hover {
-  background-color: rgb(0, 255, 51);
-  cursor: pointer;
-}
-.options {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.reset {
-  width: 60px;
-  height: 30px;
-  border-radius: 5px;
-  background-color: rgb(26, 255, 0);
-  color: white;
-}
-.X,
-.O {
-  width: 90px;
-  height: 30px;
-  border-radius: 5px;
-  color: white;
-}
-.X span,
-.O span {
-  color: white;
-}
-.socialMedia {
-  margin-top: 300px;
-  display: flex;
-  width: 100px;
-  float: right;
-  justify-content: space-around;
-}
-.socialMedia i {
-  color: white;
-  font-size: 20px;
-  z-index: 80;
-  transition: 0.3s;
-}
-.socialMedia i:hover {
-  color: rgb(191, 54, 4);
+.icon-github:before {
+  content: "\eab0";
 }

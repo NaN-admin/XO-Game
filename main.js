@@ -10,7 +10,7 @@ function getResult(y) {
   return x;
 }
 function end(num1, num2, num3) {
-  title.innerHTML = `${squars[1].toUpperCase()} winner`;
+  title.innerHTML = `${squars[1].toUpperCase()} Winner`;
   document.getElementById(`item` + num3).style.background = `red`;
   document.getElementById(`item` + num2).style.background = `red`;
   document.getElementById(`item` + num1).style.background = `red`;
@@ -40,11 +40,11 @@ function winner() {
     squars[4] != ""
   ) {
     end(4, 5, 6);
-    result = getResult(squars[1]);
+    result = getResult(squars[4]);
     if (result == null) {
-      localStorage.setItem(`${squars[1]}-result`, 1);
+      localStorage.setItem(`${squars[4]}-result`, 1);
     } else {
-      send(parseInt(result) + 1, squars[1]);
+      send(parseInt(result) + 1, squars[4]);
     }
   } else if (
     squars[7] == squars[8] &&
@@ -52,11 +52,11 @@ function winner() {
     squars[7] != ""
   ) {
     end(7, 8, 9);
-    result = getResult(squars[1]);
+    result = getResult(squars[7]);
     if (result == null) {
-      localStorage.setItem(`${squars[1]}-result`, 1);
+      localStorage.setItem(`${squars[7]}-result`, 1);
     } else {
-      send(parseInt(result) + 1, squars[1]);
+      send(parseInt(result) + 1, squars[7]);
     }
   } else if (
     squars[1] == squars[4] &&
@@ -76,11 +76,11 @@ function winner() {
     squars[2] != ""
   ) {
     end(2, 5, 8);
-    result = getResult(squars[1]);
+    result = getResult(squars[2]);
     if (result == null) {
-      localStorage.setItem(`${squars[1]}-result`, 1);
+      localStorage.setItem(`${squars[2]}-result`, 1);
     } else {
-      send(parseInt(result) + 1, squars[1]);
+      send(parseInt(result) + 1, squars[2]);
     }
   } else if (
     squars[3] == squars[6] &&
@@ -88,11 +88,11 @@ function winner() {
     squars[3] != ""
   ) {
     end(3, 6, 9);
-    result = getResult(squars[1]);
+    result = getResult(squars[3]);
     if (result == null) {
-      localStorage.setItem(`${squars[1]}-result`, 1);
+      localStorage.setItem(`${squars[3]}-result`, 1);
     } else {
-      send(parseInt(result) + 1, squars[1]);
+      send(parseInt(result) + 1, squars[3]);
     }
   } else if (
     squars[1] == squars[5] &&
@@ -112,11 +112,11 @@ function winner() {
     squars[3] != ""
   ) {
     end(3, 5, 7);
-    result = getResult(squars[1]);
+    result = getResult(squars[3]);
     if (result == null) {
-      localStorage.setItem(`${squars[1]}-result`, 1);
+      localStorage.setItem(`${squars[3]}-result`, 1);
     } else {
-      send(parseInt(result) + 1, squars[1]);
+      send(parseInt(result) + 1, squars[3]);
     }
   }
 }
