@@ -5,42 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>XO-Game</title>
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
   </head>
   <body>
-    <div class="game">
-      <div class="title"><span>XO</span> GAME</div>
-      <div class="square" id="item1" onclick="Game(this.id)"></div>
-      <div class="square" id="item2" onclick="Game(this.id)"></div>
-      <div class="square" id="item3" onclick="Game(this.id)"></div>
+    <div class="container">
+      <div class="game">
+        <div class="title"><span>XO</span> GAME</div>
+        <div class="square" id="item1" onclick="Game(this.id)"></div>
+        <div class="square" id="item2" onclick="Game(this.id)"></div>
+        <div class="square" id="item3" onclick="Game(this.id)"></div>
 
-      <div class="square" id="item4" onclick="Game(this.id)"></div>
-      <div class="square" id="item5" onclick="Game(this.id)"></div>
-      <div class="square" id="item6" onclick="Game(this.id)"></div>
+        <div class="square" id="item4" onclick="Game(this.id)"></div>
+        <div class="square" id="item5" onclick="Game(this.id)"></div>
+        <div class="square" id="item6" onclick="Game(this.id)"></div>
 
-      <div class="square" id="item7" onclick="Game(this.id)"></div>
-      <div class="square" id="item8" onclick="Game(this.id)"></div>
-      <div class="square" id="item9" onclick="Game(this.id)"></div>
+        <div class="square" id="item7" onclick="Game(this.id)"></div>
+        <div class="square" id="item8" onclick="Game(this.id)"></div>
+        <div class="square" id="item9" onclick="Game(this.id)"></div>
+      </div>
+      <div class="options position-absolute mb-5 bottom-0 start-50">
+        <div class="X">X Result : <span id="x-result">0</span></div>
+        <div class="O">O Result : <span id="y-result"> 0</span></div>
+        <button class="reset" onclick="resetResult()">Reset</button>
+      </div>
+      <div class="socialMedia">
+        <a href="https://github.com/MohammedAz90" target="_blank"
+          ><i class="icon-github"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/channel/UCnJ-TYCBIe0TGMOWx-6unRA"
+          target="_blank"
+          ><i class="icon-youtube"></i
+        ></a>
+        <a href="https://www.instagram.com/mohammed_az90/" target="_blank">
+          <i class="icon-instagram"></i
+        ></a>
+      </div>
     </div>
-    <div class="options">
-      <div class="X">X Result : <span id="x-result">0</span></div>
-      <div class="O">O Result : <span id="y-result"> 0</span></div>
-      <button class="reset" onclick="resetResult()">Reset</button>
-    </div>
-    <div class="socialMedia">
-      <a href="https://github.com/MohammedAz90" target="_blank"
-        ><i class="icon-github"></i
-      ></a>
-      <a
-        href="https://www.youtube.com/channel/UCnJ-TYCBIe0TGMOWx-6unRA"
-        target="_blank"
-        ><i class="icon-youtube"></i
-      ></a>
-      <a href="https://www.instagram.com/mohammed_az90/" target="_blank">
-        <i class="icon-instagram"></i
-      ></a>
-    </div>
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
   </body>
 </html>
