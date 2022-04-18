@@ -1,2 +1,2 @@
 # XO-Game
-link : https://TheStranger.github.io/XO-Game/
+link : https://TheStranger0.github.io/XO-Game/
